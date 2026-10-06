@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Weather App",
+    "description": "Vanilla JS app using fetch and OpenWeather API.",
+    "url": "https://github.com/you/weather-app",
+    "tags": ["JS", "API"]
+  },
+  {
+    "title":"DeepSeek",
+    "description":"DeepSeek is a Chinese built AI tool",
+    "url":"chat.deepseek.com",
+    "tags":["AI", "Tool"]
+  }
+]

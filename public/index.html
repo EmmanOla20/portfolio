@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <!-- Navigation -->
+  <nav>
+    <a href="#hero" class="nav-brand">DevPortfolio</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects-section">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <header id="hero">
+      <h1>Hi, I'm <span class="highlight">Emmanuel Ola</span></h1>
+      <p>Full-Stack Web Developer building modern web experiences with Node.js.</p>
+      <a href="#projects-section" class="btn">View My Work</a>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects-section" class="section-container">
+      <h2>My Projects</h2>
+      <div id="projects"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-container">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate web developer focused on building clean, responsive, and user-friendly applications. 
+        Currently diving deep into Node.js and Express to build full-stack applications.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-container">
+      <h2>Contact Me</h2>
+      <p class="muted-text">Have a question or want to work together? Drop me a message below.</p>
+      
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" id="submit-btn">Send Message</button>
+      </form>
+      <p id="form-status"></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Emmanuel Ola. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://github.com/EmmanOla20" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
