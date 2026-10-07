@@ -4,13 +4,28 @@
     "title": "Weather App",
     "description": "Vanilla JS app using fetch and OpenWeather API.",
     "url": "https://github.com/you/weather-app",
-    "tags": ["JS", "API"]
+    "tags": [
+      "JS",
+      "API"
+    ]
   },
   {
     "id": "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
     "title": "DeepSeek",
     "description": "DeepSeek is a Chinese built AI tool",
     "url": "chat.deepseek.com",
-    "tags": ["AI", "Tool"]
+    "tags": [
+      "AI",
+      "Tool"
+    ]
+  },
+  {
+    "id": "080df480-61d6-4458-a440-69d1e0424079",
+    "title": "Portfolio",
+    "description": "personal project",
+    "url": "https://portfolio-tfvs.onrender.com/",
+    "tags": [
+      "Personal Project"
+    ]
   }
 ]

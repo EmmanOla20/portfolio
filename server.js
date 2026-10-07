@@ -14,6 +14,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const IS_TEST = process.env.NODE_ENV === 'test';
 
+// Trust Render's reverse proxy so `secure` session cookies work behind HTTPS
+app.set('trust proxy', 1);
+
 // ---------- Security & parsing ----------
 app.use(helmet());
 app.use(express.json({ limit: '100kb' }));
