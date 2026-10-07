@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin — Portfolio</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-brand">← Back to Site</a>
+    <div class="nav-links">
+      <span id="current-user" class="muted-text"></span>
+      <button id="logout-btn" class="link-btn" hidden>Logout</button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Login view -->
+    <section id="login-view" class="section-container" hidden>
+      <h2>Admin Login</h2>
+      <form id="login-form">
+        <input type="text" id="username" placeholder="Username" required autocomplete="username">
+        <input type="password" id="password" placeholder="Password" required autocomplete="current-password">
+        <button type="submit" id="login-btn">Login</button>
+      </form>
+      <p id="login-status"></p>
+    </section>
+
+    <!-- Dashboard view -->
+    <section id="dashboard-view" hidden>
+      <h2>Dashboard</h2>
+
+      <div class="tabs">
+        <button data-tab="projects" class="tab active">Projects</button>
+        <button data-tab="messages" class="tab">Messages</button>
+      </div>
+
+      <!-- Projects tab -->
+      <div id="tab-projects" class="tab-panel">
+        <div class="panel-header">
+          <h3>Projects</h3>
+          <button id="new-project-btn" class="btn">+ New Project</button>
+        </div>
+
+        <form id="project-form" hidden>
+          <input type="hidden" id="project-id">
+          <input type="text" id="project-title" placeholder="Title" required>
+          <input type="text" id="project-url" placeholder="URL" required>
+          <input type="text" id="project-tags" placeholder="Tags (comma separated)">
+          <textarea id="project-description" placeholder="Description" rows="3" required></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn">Save</button>
+            <button type="button" id="cancel-project-btn" class="btn secondary">Cancel</button>
+          </div>
+        </form>
+
+        <div id="projects-list"></div>
+      </div>
+
+      <!-- Messages tab -->
+      <div id="tab-messages" class="tab-panel" hidden>
+        <div class="panel-header">
+          <h3>Messages</h3>
+          <span id="messages-count" class="muted-text"></span>
+        </div>
+        <div id="messages-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>
