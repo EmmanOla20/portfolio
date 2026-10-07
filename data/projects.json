@@ -1,14 +1,16 @@
 [
   {
+    "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
     "title": "Weather App",
     "description": "Vanilla JS app using fetch and OpenWeather API.",
     "url": "https://github.com/you/weather-app",
     "tags": ["JS", "API"]
   },
   {
-    "title":"DeepSeek",
-    "description":"DeepSeek is a Chinese built AI tool",
-    "url":"chat.deepseek.com",
-    "tags":["AI", "Tool"]
+    "id": "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
+    "title": "DeepSeek",
+    "description": "DeepSeek is a Chinese built AI tool",
+    "url": "chat.deepseek.com",
+    "tags": ["AI", "Tool"]
   }
 ]
